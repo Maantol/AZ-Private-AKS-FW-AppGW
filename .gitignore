@@ -1,0 +1,15 @@
+*.tfstate
+*.terraform.lock.hcl
+*.tfstate.backup
+.terraform/
+*.tfvars
+override.tf
+override.tf.json
+.terraform.tfstate.*
+crash.log
+.vscode/
+.idea/
+.DS_Store
+azure.tfvars
+secrets.tfvars
+azurek8s
