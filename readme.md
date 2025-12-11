@@ -13,11 +13,12 @@ This deployment follows Microsoft recommended AKS Baseline Infrastructure achite
 
 
 
-Learn more about AKS Reference architecture:
+Learn more about AKS Baseline reference architecture:
 
 https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks
 
 ## AKS Network profile
+
 
 **Azure CNI** (Overlay)
 
@@ -182,7 +183,7 @@ This deployment automatically downloads and installs following services to Jumpb
 * Kubectl
 + Helm
 
-Login to Azure with created User Assigned Identity
+Login to Azure with created User Assigned Identity **in Jumpbox**
 
 ```
 az login --identity
@@ -197,6 +198,14 @@ Now you should be able to use kubectl normally. For example:
 ```
 kubectl get all
 ```
+
+Which should return following:
+
+```
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   12.34.56.7   <none>        443/TCP   54m57s
+```
+
 
 You're private AKS cluster should now be running for deployments!
 
