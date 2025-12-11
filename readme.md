@@ -26,6 +26,11 @@ Learn more about  AKS CNI networking:
 
 https://learn.microsoft.com/en-us/azure/aks/concepts-network-cni-overview
 
+Learn more about Cilium, which powers AKS CNI.
+
+https://cilium.io
+
+
 ## Azure Services
 
 ### Management
