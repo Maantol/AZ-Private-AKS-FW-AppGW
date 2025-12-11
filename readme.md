@@ -118,7 +118,7 @@ az login
 
 Export you Subscription ID
 ```
-export $ARM_SUBSCRIPTION_ID=<YOUR SUBSCRIPTION ID>
+export ARM_SUBSCRIPTION_ID=<YOUR SUBSCRIPTION ID>
 ```
 
 Follow Terraform workflow
