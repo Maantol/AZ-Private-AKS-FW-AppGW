@@ -231,4 +231,4 @@ loadBalancerAnnotations:
 
 ## Issues
 
-Feel free to make issue if you feel that there is a bug. Take in consideration that Azure services update constantly and in this project used Terraform providers version may not be anymore compatible in some of time later.
+Feel free to make issue if you feel that there is a bug. Take in consideration that Azure services update constantly and in this project used Terraform providers version may be depracated in the future.
