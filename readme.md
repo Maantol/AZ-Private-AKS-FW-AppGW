@@ -216,23 +216,9 @@ You're private AKS cluster should now be running for deployments!
 
 ### Nginx Ingress Controller
 
-This deployment uses Nginx Ingess Controller. There are some consideration to be noted since we are using Application Gateway.
+This deployment uses Nginx Ingess Controller as AKS add on deployment.
 
-When you make your deployment, you must specify **Load Balancer annotations** in **Ingress** object
-
-By default Internal Load Balancer is in **"snet-lb-sbx-we-spoke-aks"** subnet.
-
-By default Application Gateway uses private ip **10.1.2.10** in backend pool.
-
-
-Here is example of annotations to be specified
-
-```
-loadBalancerAnnotations:
-    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
-    service.beta.kubernetes.io/azure-load-balancer-internal-subnet: "snet-lb-sbx-we-spoke-aks" # ILB subnet
-    service.beta.kubernetes.io/azure-load-balancer-ipv4: "10.1.2.10" #ILB IP
-```
+Use Ingress object inorder to route traffic correctly to your deployment.
 
 ## Issues
 
